@@ -1,0 +1,8 @@
+{
+  "weights": "runs\\detect\\runs\\detect\\leonardo_baseline\\weights\\best.pt",
+  "data": "processed\\data.yaml",
+  "box_precision": 0.7901436401753666,
+  "box_recall": 0.6418708259723047,
+  "map50": 0.7149752520382521,
+  "map50_95": 0.38201795545627054
+}
