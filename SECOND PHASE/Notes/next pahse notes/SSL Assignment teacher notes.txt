@@ -1,0 +1,7 @@
+It is a bounding box segmentation and classification problem. So it's asegmentation task.
+
+Maybe train different yolos. One for larger objects, one for smaller objects. Like train a YOLO for a human, train a YOLO for an aircraft, etc.
+
+focus loss
+
+You could cut up pictures so you keep the resolution completely intact so details aren't lost and train on these slices
