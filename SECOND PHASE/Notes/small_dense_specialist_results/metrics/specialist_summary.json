@@ -1,0 +1,46 @@
+{
+  "processed_root": "C:\\Users\\tudor\\Documents\\GitHub\\Leonardo-Airborne-Object-Recognition-Challenge-SSL-Assignment-\\processed",
+  "train_images": 14145,
+  "small_area_threshold": 0.0015,
+  "tiny_area_threshold": 0.0005,
+  "large_area_threshold": 0.01,
+  "dense_threshold": 10,
+  "very_dense_threshold": 30,
+  "rare_factor": 2,
+  "small_dense_factors": [
+    2,
+    3
+  ],
+  "counts": {
+    "tiny_images": 2994,
+    "small_images": 5657,
+    "dense_images": 1254,
+    "very_dense_images": 282,
+    "rare_images": 3985,
+    "small_dense_images": 5871,
+    "large_clear_images": 4793
+  },
+  "small_dense_class_counts": {
+    "Obstacle": 7907,
+    "Human": 8689,
+    "Aircraft": 800,
+    "Ship": 7368,
+    "GroundVehicle": 17584,
+    "Drone": 1485,
+    "Helicopter": 438
+  },
+  "large_clear_class_counts": {
+    "GroundVehicle": 2217,
+    "Obstacle": 1226,
+    "Human": 912,
+    "Aircraft": 793,
+    "Ship": 1992,
+    "Helicopter": 658,
+    "Drone": 10
+  },
+  "outputs": {
+    "stats_csv": "C:\\Users\\tudor\\Documents\\GitHub\\Leonardo-Airborne-Object-Recognition-Challenge-SSL-Assignment-\\processed\\meta\\specialist_image_stats.csv",
+    "primary_yaml": "C:\\Users\\tudor\\Documents\\GitHub\\Leonardo-Airborne-Object-Recognition-Challenge-SSL-Assignment-\\processed\\data_small_dense.yaml",
+    "large_clear_yaml": "C:\\Users\\tudor\\Documents\\GitHub\\Leonardo-Airborne-Object-Recognition-Challenge-SSL-Assignment-\\processed\\data_large_clear.yaml"
+  }
+}

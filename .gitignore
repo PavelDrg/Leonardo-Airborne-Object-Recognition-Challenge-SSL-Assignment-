@@ -1,2 +1,11 @@
 *.pt
+*.pt.zip
 scripts/.idea/
+.idea/
+.venv/
+leonardo-airborne-object-recognition-challenge/
+processed/
+processed_sliced/
+runs/threshold_tuning/
+runs/detect/leonardo_B_*/
+runs/detect/val/

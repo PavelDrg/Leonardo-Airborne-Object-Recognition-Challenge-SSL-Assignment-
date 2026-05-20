@@ -16,6 +16,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--name", default=None, help="Run name")
     parser.add_argument("--oversample-rare", action="store_true", help="Repeat rare-class images in train split")
     parser.add_argument("--oversample-factor", type=float, default=2.0, help="How many times to repeat rare images")
+    parser.add_argument("--imgsz", type=int, default=None, help="Override variant image size")
+    parser.add_argument("--epochs", type=int, default=None, help="Override variant epoch count")
+    parser.add_argument("--batch", type=int, default=None, help="Override variant batch size")
+    parser.add_argument("--workers", type=int, default=None, help="Override Ultralytics dataloader workers")
+    parser.add_argument("--patience", type=int, default=None, help="Override early-stopping patience")
     return parser.parse_args()
 
 
@@ -83,6 +88,13 @@ def main() -> None:
     print(f"[{datetime.now().isoformat(timespec='seconds')}] CUDA available: {torch.cuda.is_available()} | using: {device_name}", flush=True)
 
     cfg = config_for_variant(args.variant)
+    for key in ("imgsz", "epochs", "batch", "patience"):
+        value = getattr(args, key)
+        if value is not None:
+            cfg[key] = value
+    if args.workers is not None:
+        cfg["workers"] = args.workers
+
     name = args.name or f"leonardo_{args.variant}"
     model = YOLO(cfg.pop("weights"))
 

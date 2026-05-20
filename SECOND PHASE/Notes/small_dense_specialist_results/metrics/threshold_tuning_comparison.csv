@@ -1,0 +1,4 @@
+experiment,selection,conf,iou,max_det,precision,recall,map50,map50_95,notes
+Improved reference threshold tuning,best_by_mAP50_95,0.001,0.7,1000,0.8372094143,0.7164496374,0.7934979547,0.4401304648,Slight mAP50-95 improvement over untuned improved reference
+Improved reference threshold tuning,best_by_recall,0.001,0.55,600,0.8422394610,0.7404960955,0.8043246783,0.4370511260,Higher recall but lower mAP50-95 than best mAP setting
+Small-dense specialist,final_validation,,,,0.8450000000,0.7460000000,0.8140000000,0.4470000000,Still best overall result among these options

@@ -1,0 +1,25 @@
+{
+  "weights": "C:\\Users\\tudor\\Documents\\GitHub\\Leonardo-Airborne-Object-Recognition-Challenge-SSL-Assignment-\\improved_reference_best.pt",
+  "data": "C:\\Users\\tudor\\Documents\\GitHub\\Leonardo-Airborne-Object-Recognition-Challenge-SSL-Assignment-\\processed\\data.yaml",
+  "best_by_map50_95": {
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 1000,
+    "precision": 0.8372094142566036,
+    "recall": 0.7164496373883845,
+    "map50": 0.7934979546525789,
+    "map50_95": 0.44013046479902634,
+    "run_name": "conf_0p001_iou_0p7_maxdet_1000"
+  },
+  "best_by_recall": {
+    "conf": 0.001,
+    "iou": 0.55,
+    "max_det": 600,
+    "precision": 0.8422394609551925,
+    "recall": 0.7404960955443957,
+    "map50": 0.8043246782880055,
+    "map50_95": 0.4370511259869617,
+    "run_name": "conf_0p001_iou_0p55_maxdet_600"
+  },
+  "rows": 24
+}
